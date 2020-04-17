@@ -1,0 +1,172 @@
+﻿/**
+ * Ataa Slider.
+ * by NetMechanics
+ * Eng\ Mahmoud Alghool
+ * www.netmechanics.net
+ * info@netmechanics.net
+ */
+
+#slider-holder {
+    position: relative;
+}
+
+#moveRight {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#moveLeft {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#openImage {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#slider-holder, #images-holder, #control-holder {
+    width: 100%;
+    overflow: hidden;
+}
+
+#images-holder, #control-holder {
+    margin: 20px 0px;
+}
+
+#images-holder {
+    position: relative;
+}
+
+    #images-holder .slide {
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+        #images-holder .slide:not(.active) {
+            padding-top: 50px;
+        }
+
+
+#slider-holder .img-holder {
+    overflow: hidden;
+    height: 100%;
+}
+
+    #slider-holder .img-holder img {
+        height: 100%;
+        width: 100%;
+    }
+
+.first-image, .last-image {
+    z-index: -1;
+}
+
+#control-holder > div {
+    display: inline-table;
+    position: relative;
+}
+
+#slider-holder .left-holder, #slider-holder .right-holder {
+    width: 20%;
+    height: 100%;
+}
+
+#slider-holder .main-holder {
+    width: 60%;
+    text-align: center;
+    height: 0;
+}
+
+
+#control-holder i {
+    position: absolute;
+    font-size: x-large;
+}
+
+#slider-holder .first {
+    opacity: 0;
+}
+
+#slider-holder .second {
+    opacity: 1;
+}
+
+#slider-holder .first.right {
+    left: 0px;
+}
+
+#slider-holder .second.right {
+    left: 50%;
+}
+
+#slider-holder .first.left {
+    right: 0px
+}
+
+.second.left {
+    right: 50%;
+}
+
+#slider-holder {
+    position: relative;
+}
+
+    #slider-holder .img-name {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 15px auto;
+        background-color: rgba(255, 251, 251, 0.5);
+        padding: 5px 10px;
+    }
+
+#image-show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+    #image-show img {
+        max-width: 90%;
+        max-height: 90%;
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #image-show .image-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: white;
+        cursor: pointer;
+    }
