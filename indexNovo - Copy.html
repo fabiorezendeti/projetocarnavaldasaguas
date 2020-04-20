@@ -8,7 +8,7 @@
     <title>Carnaval das Àguas</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">-->
     <link href="assets/css/carrossel360.css" rel="stylesheet" />
     <!-- Favicons -->
     <link href="assets/img/fontes/fontes.css" rel="stylesheet" />
@@ -19,7 +19,7 @@
     <link href="assets/css/galeria.css" rel="stylesheet" />
     <link href="assets/css/slider.css" rel="stylesheet" />
     <link href="assets/css/carrousel.css" rel="stylesheet" />
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/masc1.png" rel="icon">
     <link href="assets/css/menu3.css" rel="stylesheet" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="assets/action-grid-slider-master/action-grid-slider.css" rel="stylesheet" />
@@ -228,6 +228,8 @@
             position: absolute;
             margin-top: 16%;
             max-width: 100%;
+            height:80px;
+         
         }
 
         .content7 {
@@ -300,6 +302,122 @@
             max-width: 100%;
         }
 
+
+        .content17 {
+            left: 60%;
+            opacity:inherit;
+            position: absolute;
+            margin-top: 45%;
+        }
+
+        .imgteste {
+            display: block;
+            margin: 0 auto 0 auto; /* Centred */
+            width: 100%;
+        }
+
+        #imgcelular {
+            max-width: 300px;
+            opacity: 0;
+            left: 75%;
+            position: absolute;
+            margin-top: 45%;
+        }
+
+        @media only screen and (max-width: 640px) {
+            #imgcelular {
+                left: 67%;
+                position: absolute;
+                margin-top: 45%;
+                opacity: 0;
+                position: absolute;
+                max-width: 150px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            #imgcelular {
+                left: 65%;
+                position: absolute;
+                margin-top: 45%;
+                opacity: inherit;
+                position: absolute;
+                max-width: 150px;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            #imgcelular {
+                left: 65%;
+                position: absolute;
+                margin-top: 45%;
+                opacity: inherit;
+                position: absolute;
+                max-width: 150px;
+            }
+        }
+        @media only screen and (max-width: 350px) {
+            #imgcelular {
+                left: 65%;
+                position: absolute;
+                margin-top: 45%;
+                opacity: inherit;
+                position: absolute;
+                max-width: 150px;
+            }
+        }
+        @media only screen and (max-width: 414px) {
+            #imgcelular {
+                left: 65%;
+                position: absolute;
+                margin-top: 45%;
+                opacity: inherit;
+                position: absolute;
+                max-width: 150px;
+            }
+        }
+        @media only screen and (max-width: 300px) {
+            #imgcelular {
+                left: 75%;
+                position: absolute;
+                margin-top: 45%;
+                opacity: inherit;
+                position: absolute;
+                max-width: 300px;
+            }
+        }
+
+
+        @media only screen and (max-width: 320px) {
+            /* Small screen, non-retina */
+            .content5 {
+                background-image: url("assets/img/oncacelular.png");
+            }
+        }
+        /* Layout For Larger Screens */
+
+        #fundomapa {
+            max-width: 400px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #fundomapa {
+                width: 300px;
+                height:30px ;
+            }
+        }
+
+        #imgicone {
+            max-width:70%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #imgicone {
+                width: 70px;
+                height: 100%;
+            }
+        }
+
         .imagem-center {
             text-align: center;
             
@@ -323,6 +441,13 @@
                 font-size: calc(12px + (8/1200) * 100 * 1vw);
             }
         }
+
+        .abs-center-x {
+            position: absolute;
+        
+            left: 39%;
+            transform: translateX(-30%);
+        }
     </style>
 
     <!-- Template Main CSS File -->
@@ -342,64 +467,67 @@
     <!--   24th of November 2015   -->
     <!--        MIT License        -->
     <!-- ======= Hero Section ======= -->
-    <div class="fixed-top">
-        <header>
-            <button class="hamburger">&#9776;</button>
-            <button class="cross">&#735;</button>
-        </header>
+    <header id="header" class="fixed-top">
+        <div>
+            <p class="imagem-center">
+                <img id="fundomapa" src="assets/img/topo.png" alt="" >
 
-        <div class="menu" style="top:0px;">
-            <div>
-                <p class="imagem-center">
-                    <img src="assets/img/topo.png" alt="" height="60" style="width:400px;">
+            </p>
 
-                </p>
+        </div>
+        <div class="container-fluid d-flex">
 
-            </div>
+            <!--<div class="logo mr-auto">
+            <a href="index.html"> <img src="assets/img/topo.png" alt="" height="30" width="400" style="min-width:300px;left:40%;"></a>
+
+        </div>-->
 
 
-                <ul  id="menuingles">
-                    <li style="color:gray"><a href="#videos">Videos</a></li>
-                    <li style="color:darkslategrey"><a href="#imagens">Images</a></li>
-                    <li><a href="#pinturas">Paintings</a></li>
-                    <li><a href="#podcasts">Podcasts</a></li>
-                    <li><a href="#galeria360">Gallery 360°</a></li>
-                    <li><a href="#sobre">About</a></li>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul id="menuingles" class="abs-center-x" style="width:800px">
+                    <li class="oferta-font" style="color:white"><a href="#videos">Videos</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#imagens">Images</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#pinturas">Paintings</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#podcasts">Podcasts</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#galeria360">Gallery 360°</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#sobre">About</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#links">Links</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#contact">Contacts</a></li>
 
-                    <li><a href="#contact">Contacts</a></li>
-                    <li><a href="#links">Links</a></li>
 
-                    <li class="" style="text-align: right;"> <a id="idiomabrazil" title="Português"> <img src="assets/img/iconfinder_Flag_of_Brazil_96143.png" height="30" width="30" /></a></li>
-
-                 </ul>
-
-                <ul id="menubrasil">
-                    <li style="color:gray"><a href="#videos">Vídeos</a></li>
-                    <li style="color:darkslategrey"><a href="#imagens">Imagens</a></li>
-                    <li><a href="#pinturas">Pinturas</a></li>
-                    <li><a href="#podcasts">Podcasts</a></li>
-                    <li><a href="#galeria360">Galeria 360°</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-
-                    <li><a href="#contact">Contatos</a></li>
-                    <li><a href="#links">Links</a></li>
-
-                    <li class=""> <a id="idiomaingles" title="English"><img src="assets/img/iconfinder_Flag_of_United_States_96220.png" height="30" width="30" /></a></li>
+                    <li class="get-started"><a id="idiomabrazil" title="English"><img src="assets/img/iconfinder_Flag_of_Brazil_96143.png" height="30" width="30" /></a></li>
+                    <!--<li class="get-started"><a href="#about">Get Started</a></li>-->
                 </ul>
 
+                <ul id="menubrasil" class="abs-center-x">
+
+                    <li class="oferta-font" style="color:white"><a href="#videos">Vídeos</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#imagens">Imagens</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#pinturas">Pinturas</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#podcasts">Podcasts</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#galeria360">Galeria 360°</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#sobre">Sobre</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#links">Links</a></li>
+                    <li class="oferta-font" style="color:white"><a href="#contact">Contatos</a></li>
+
+                   
 
 
-            </div>
+                    <li class="get-started"><a id="idiomaingles" title="English"><img src="assets/img/iconfinder_Flag_of_United_States_96220.png" height="30" width="30" /></a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
 
-    </div>
-    <section style="background-image:url(assets/img/mapabase.jpg);min-height:400px;height:800px;max-width:1508px;background-size:100%;top:70%;background-repeat:no-repeat;">
+        </div>
+    </header><!-- End Header -->
+
+    <section style="background-image:url(assets/img/mapabase.jpg);min-height:650px;height:800px;max-width:1508px;background-size:100%;background-repeat:no-repeat;">
         <div class="container2 ">
             <div class="sizing2"></div>
 
             <div class="content2 img-hover">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#majestade">
-                        <img src="assets/img/masc2.png" height="100" top="10" style="max-width:100%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/masc2.png" />
                     </a>
                 </div>
 
@@ -409,94 +537,108 @@
             <div class="content3 img-hover">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#bicharada">
-                        <img src="assets/img/onca.png" height="100" top="10" style="max-width:100%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/onca.png" />
                     </a>
                 </div>
             </div>
             <div class="content4 img-hover">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#atentados">
-                        <img src="assets/img/picapau.png" height="80" top="10" style="max-width:100%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/picapau.png" />
                     </a>
                 </div>
             </div>
             <div class="content5 img-hover">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#linguarudos">
-                        <img src="assets/img/masc1.png" height="100" top="10" style="max-width:100%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/masc1.png" top="10" />
                     </a>
                 </div>
             </div>
             <div class="content6 img-hover">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#ultima">
-                        <img src="assets/img/masc3.png" height="100" top="10" style="max-width:100%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/masc3.png" />
                     </a>
                 </div>
             </div>
             <div class="content7 img-hover">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#bambas">
-                        <img src="assets/img/macaco.png" height="100" top="10" style="max-width:100%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/macaco.png" />
                     </a>
                 </div>
             </div>
             <div class="content8 img-hover2">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#panteras">
-                        <img src="assets/img/panterasfolia.png" top="10" height="30" style="max-height:70%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/panterasfolia.png" top="10" />
                     </a>
                 </div>
             </div>
             <div class="content9 img-hover2">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#reizinho">
-                        <img src="assets/img/letrasmapa/reizinho.png" top="10" height="30" style="max-height:70%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/letrasmapa/reizinho.png" />
                     </a>
                 </div>
             </div>
             <div class="content10 img-hover2">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#maluquinhos">
-                        <img src="assets/img/letrasmapa/maluquinhos.png" height="30" style="max-height:70%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/letrasmapa/maluquinhos.png" />
                     </a>
                 </div>
             </div>
             <div class="content11 img-hover2">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#myModal6">
-                        <img src="assets/img/letrasmapa/reidabrincadeira.png" height="30" top="10" style="max-width:80%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/letrasmapa/reidabrincadeira.png" />
                     </a>
                 </div>
             </div>
             <div class="content12 img-hover2">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#piratas">
-                        <img src="assets/img/letrasmapa/piratasdoamor.png" height="30" top="10" style="max-height:70%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/letrasmapa/piratasdoamor.png" />
                     </a>
                 </div>
             </div>
             <div class="content13 img-hover2">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#espantalhos">
-                        <img src="assets/img/letrasmapa/espantalhos.png" height="30" style="max-height:70%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/letrasmapa/espantalhos.png" />
                     </a>
                 </div>
             </div>
             <div class="content14 img-hover2">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#bolapreta">
-                        <img src="assets/img/letrasmapa/bolapreta.png" height="30" top="10" style="max-height:70%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/letrasmapa/bolapreta.png" />
                     </a>
                 </div>
             </div>
             <div class="content15 img-hover2">
                 <div class="">
                     <a href="#" data-toggle="modal" data-target="#quemsao">
-                        <img src="assets/img/letrasmapa/quwmsao.png" height="30" top="10" style="max-height:70%;min-width:20px;" />
+                        <img id="imgicone" src="assets/img/letrasmapa/quwmsao.png" />
                     </a>
                 </div>
             </div>
+
+            <div class="content17">
+                <div class="">
+                    
+                        <img id="imgcelular" src="assets/img/virarcelular.png" />
+                  
+                </div>
+            </div>
+
+
+
+
+
+
         </div>
 
 
@@ -1852,43 +1994,34 @@
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
                                     <div class="view">
-                                        <iframe height="350px" width="100%" allowfullscreen="true"
+                                        <iframe height="350" width="1200" allowfullscreen="true"
                                                 src="https://momento360.com/e/u/94dcf98f249a4fcfafba6eeeeb8e055f?utm_campaign=embed&utm_source=other&utm_medium=other&heading=20&pitch=-4.2&field-of-view=75"></iframe>
                                     </div>
                                     <div class="carousel-caption">
-                                       
+
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <!--Mask color-->
                                     <div class="view">
-                                        <iframe height="350px" width="100%" allowfullscreen="true"
+                                        <iframe height="350" width="1000" allowfullscreen="true"
                                                 src="https://momento360.com/e/u/c1fe55d5c2f14001a7002a557bda6923?utm_campaign=embed&utm_source=other&utm_medium=other&heading=0&pitch=0&field-of-view=75"></iframe>
                                     </div>
                                     <div class="carousel-caption">
-                                        
+
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <!--Mask color-->
                                     <div class="view">
-                                        <iframe height="350px" width="100%" allowfullscreen="true"
+                                        <iframe height="350" width="1000" allowfullscreen="true"
                                                 src="https://momento360.com/e/u/04153775c90743abb1b7957265a77a2d?utm_campaign=embed&utm_source=other&utm_medium=other&heading=0&pitch=0&field-of-view=75"></iframe>
                                     </div>
                                     <div class="carousel-caption">
-                                       
+
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <!--Mask color-->
-                                    <div class="view">
-                                        <iframe height="350px" width="100%" allowfullscreen="true"
-                                                src="https://momento360.com/e/u/13d701664e6b4ab3919efaaefffa9d92?utm_campaign=embed&utm_source=other&utm_medium=other&heading=302.70000000000005&pitch=-5.9&field-of-view=75"></iframe>
-                                    </div>
-                                    <div class="carousel-caption">
-                                        
-                                    </div>
-                                </div>
+                               
                             </div>
                             <!--/.Slides-->
                             <!--Controls-->
@@ -2134,7 +2267,7 @@
 
             <div class="container page-top">
                 <div class="section-title" data-aos="fade-up">
-                  
+
                     <p id="linksBrasil" class="oferta-font" style="color:black;">Links Interessantes</p>
                     <p id="linksIngles" class="oferta-font" style="color:black;">Interesting Links</p>
                 </div>
@@ -2343,13 +2476,13 @@
 
                             </div>
                             <!--<a class="carousel-control-prev" href="#ThumbnailCarousel2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true" style="color:chocolate"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#ThumbnailCarousel2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true" style="color:chocolate"></span>
-            <span class="sr-only">Next</span>
-        </a>-->
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="color:chocolate"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#ThumbnailCarousel2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="color:chocolate"></span>
+                                <span class="sr-only">Next</span>
+                            </a>-->
                         </div>
 
 
@@ -2375,7 +2508,7 @@
                 </div>
 
 
-                <div class="row"  >
+                <div class="row">
                     <div class="col-md-10" style="text-align:end;padding-left:40%;padding-right:0%;width:400px" data-aos="fade-up" data-aos-delay="200">
                         <form method="post" role="form" class="sendEmail">
 
@@ -2395,13 +2528,13 @@
 
                             </div>
                             <div class="form-group">
-                                <label  id="assuntoBrasil" for="name" style="color:white">Assunto</label>
+                                <label id="assuntoBrasil" for="name" style="color:white">Assunto</label>
                                 <label id="assuntoIngles" for="name" style="color:white">subject</label>
                                 <input type="text" class="form-control" id="subject" data-required="true" />
                                 <div class="validate"></div>
                             </div>
                             <div class="form-group">
-                                
+
                                 <label id="mensagemBrasil" for="name" style="color:white;">Mensagem</label>
                                 <label id="mensagemIngles" for="name" style="color:white;">Message</label>
                                 <textarea class="form-control" name="message" rows="10" id="emailbody" data-required="true"></textarea>
@@ -2409,15 +2542,15 @@
                             </div>
                             <div class="mb-3">
                                 <!--
-        <div class="error-message"></div>
-        <div class="sent-message">Your message has been sent. Thank you!</div>-->
-                            </div> 
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>-->
+                            </div>
                             <div class="text-center">
                                 <button id="enviarBrasil" type="submit">Enviar</button>
                                 <button id="enviarIngles" type="submit">Send</button>
                                 <span class="success-help">Sua mensagem foi enviada com sucesso !</span>
                             </div>
-                          
+
                         </form>
                     </div>
 
@@ -2524,7 +2657,7 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+   
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
@@ -2535,7 +2668,7 @@
     <script src="assets/unitegallery-master/package/unitegallery/js/unitegallery.min.js"></script>
     <script src="assets/unitegallery-master/package/unitegallery/themes/carousel/ug-theme-carousel.js"></script>
     <script src="assets/action-grid-slider-master/action-grid-slider.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
@@ -2605,9 +2738,7 @@
 
 
         });
-        $(function () {
-            $('#example').popover({ placement: 'bottom', content: image, html: true });
-        });
+       
         $(document).ready(function () {
             $(".fancybox").fancybox({
                 openEffect: "none",
