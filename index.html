@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,7 +22,7 @@
     <link href="assets/img/masc1.png" rel="icon">
     <link href="assets/css/menu3.css" rel="stylesheet" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="assets/action-grid-slider-master/action-grid-slider.css" rel="stylesheet" />
+
     <!-- Google Fonts -->
   
     <link href="assets/css/menu3.css" rel="stylesheet" />
@@ -470,7 +470,7 @@
     <header id="header" class="fixed-top">
         <div>
             <p class="imagem-center">
-                <img id="fundomapa" src="assets/img/topo.png" alt="" >
+                <img id="fundomapa" src="assets/img/topo.png" alt="">
 
             </p>
 
@@ -478,9 +478,9 @@
         <div class="container-fluid d-flex">
 
             <!--<div class="logo mr-auto">
-            <a href="index.html"> <img src="assets/img/topo.png" alt="" height="30" width="400" style="min-width:300px;left:40%;"></a>
+                <a href="index.html"> <img src="assets/img/topo.png" alt="" height="30" width="400" style="min-width:300px;left:40%;"></a>
 
-        </div>-->
+            </div>-->
 
 
             <nav class="nav-menu d-none d-lg-block">
@@ -510,7 +510,7 @@
                     <li class="oferta-font" style="color:white"><a href="#links">Links</a></li>
                     <li class="oferta-font" style="color:white"><a href="#contact">Contatos</a></li>
 
-                   
+
 
 
                     <li class="get-started"><a id="idiomaingles" title="English"><img src="assets/img/iconfinder_Flag_of_United_States_96220.png" height="30" width="30" /></a></li>
@@ -628,9 +628,9 @@
 
             <div class="content17">
                 <div class="">
-                    
-                        <img id="imgcelular" src="assets/img/virarcelular.png" />
-                  
+
+                    <img id="imgcelular" src="assets/img/virarcelular.png" />
+
                 </div>
             </div>
 
@@ -2021,7 +2021,7 @@
 
                                     </div>
                                 </div>
-                               
+
                             </div>
                             <!--/.Slides-->
                             <!--Controls-->
@@ -2654,10 +2654,11 @@
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
+
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-   
+
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
@@ -2667,8 +2668,8 @@
     <script src="assets/unitegallery-master/package/unitegallery/js/unitegallery.js"></script>
     <script src="assets/unitegallery-master/package/unitegallery/js/unitegallery.min.js"></script>
     <script src="assets/unitegallery-master/package/unitegallery/themes/carousel/ug-theme-carousel.js"></script>
-    <script src="assets/action-grid-slider-master/action-grid-slider.js"></script>
-   
+
+
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
@@ -2738,18 +2739,18 @@
 
 
         });
-       
-        $(document).ready(function () {
-            $(".fancybox").fancybox({
-                openEffect: "none",
-                closeEffect: "none"
-            });
-            $(".zoom").hover(function () {
-                $(this).addClass('transition');
-            }, function () {
-                $(this).removeClass('transition');
-            });
-        });
+
+        //$(document).ready(function () {
+        //    $(".fancybox").fancybox({
+        //        openEffect: "none",
+        //        closeEffect: "none"
+        //    });
+        //    $(".zoom").hover(function () {
+        //        $(this).addClass('transition');
+        //    }, function () {
+        //        $(this).removeClass('transition');
+        //    });
+        //});
 
         $('.owl-carousel').owlCarousel({
             loop: true,
@@ -3254,37 +3255,37 @@
                 });
             });
 
-            $(".sendEmail").submit(function (e) {
-                $(".mdl-spinner").fadeIn("slow").css("display", "inline-block");
-                e.preventDefault();
-                var nome = $("#nome").val();
-                var from = "fabiorezendeti@gmail.com";
-                var to = $("#to").val();
-                var subject = $("#subject").val();
-                var emailbody = $("#emailbody").val();
-                $.ajax({
-                    url: "https://mybench-sendingemail.backbench.io/send",
-                    data: {
-                        from: from,
-                        to: to,
-                        subject: subject,
-                        emailbody: emailbody
-                    },
-                    error: function () {
-                        $(".mdl-spinner").fadeOut("fast");
-                        $(".success-help").html("a mensagem não foi enviada.Problemas no servidor").fadeIn("slow");
-                    },
-                    success: function (data) {
-                        $(".mdl-spinner").fadeOut("fast");
-                        ["from", "to", "subject", "emailbody"].forEach(function (field) {
-                            $("#" + field).val("");
-                        });
-                        $(".success-help").fadeIn("slow");
-                    },
-                    type: "POST"
-                });
+        $(".sendEmail").submit(function (e) {
+            $(".mdl-spinner").fadeIn("slow").css("display", "inline-block");
+            e.preventDefault();
+            var nome = $("#nome").val();
+            var from = "fabiorezendeti@gmail.com";
+            var to = $("#to").val();
+            var subject = $("#subject").val();
+            var emailbody = $("#emailbody").val();
+            $.ajax({
+                url: "https://mybench-sendingemail.backbench.io/send",
+                data: {
+                    from: from,
+                    to: to,
+                    subject: subject,
+                    emailbody: emailbody
+                },
+                error: function () {
+                    $(".mdl-spinner").fadeOut("fast");
+                    $(".success-help").html("a mensagem não foi enviada.Problemas no servidor").fadeIn("slow");
+                },
+                success: function (data) {
+                    $(".mdl-spinner").fadeOut("fast");
+                    ["from", "to", "subject", "emailbody"].forEach(function (field) {
+                        $("#" + field).val("");
+                    });
+                    $(".success-help").fadeIn("slow");
+                },
+                type: "POST"
             });
         });
+            });
     </script>
 </body>
 
