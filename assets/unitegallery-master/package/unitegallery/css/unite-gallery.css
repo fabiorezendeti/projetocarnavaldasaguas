@@ -961,7 +961,7 @@ img.ug-sepia-effect{
 .ug-arrow-right.ug-skin-default{
 	width:15px;
 	height:30px;
-	background-image:url('../skins/default/slider_arrow_left.png');
+	background-image:url('');
 	background-position:0px 0px;
 }
 
@@ -1014,20 +1014,52 @@ img.ug-sepia-effect{
 }
 
 .ug-button-tile-navigation{
-	width:36px;
-	height:36px;
+	width:60px;
+	height:60px;
 	background-position:top left;
 	cursor:pointer;
 	float:left;
 }
 
-.ug-button-tile-navigation.ug-button-tile-left{
-	background-image:url('../skins/default/tile_button_left.png');
+    .ug-button-tile-navigation.ug-button-tile-left {
+        background-image: url('../../../../img/voltar.png');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+       
+    }
+
+    .ug-button-tile-navigation.ug-button-tile-right {
+        background-image: url('../../../../img/avancar.png');
+        background-size: 100% auto;
+        background-repeat:no-repeat;
+      
+    }
+
+.carousel-control-prev-icon {
+    background-image: url("../../../img/voltar.png")
 }
 
-.ug-button-tile-navigation.ug-button-tile-right{
-	background-image:url('../skins/default/tile_button_right.png');
+.carousel-control-next-icon {
+    background-image: url("../../../img/avancar.png")
 }
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 30%;
+    margin-left: 30%;
+    list-style: none
+}
+
+
 
 .ug-button-tile-navigation:hover{
 	background-position:bottom left;
