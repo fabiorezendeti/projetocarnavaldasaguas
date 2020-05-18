@@ -6,7 +6,7 @@
 */
 
 /*--------------------------------------------------------------
-# General
+# GeneralF
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -69,13 +69,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Header
 --------------------------------------------------------------*/
 #header {
- 
-  transition: all 0.5s;
-  z-index: 997;
-  transition: all 0.5s;
-  padding: 15px 0;
-  background: rgba(255, 255, 255, 0.00);
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 15px 0;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #header .logo h1 {
@@ -118,15 +118,14 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   float: left;
 }
 
-.nav-menu a {
-  display: block;
-  position: relative;
-  color: #fff;
-  padding: 10px 15px;
-  transition: 0.3s;
-  font-size: 18px;
-  
-}
+    .nav-menu a {
+        display: block;
+        position: relative;
+        color: #f06449;
+        padding: 10px 15px;
+        transition: 0.3s;
+        font-size: 18px;
+    }
 
     .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
         color: #fff;
@@ -312,7 +311,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #eb5d1e;
 }
 
 .mobile-nav-overly {
@@ -335,9 +334,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: 0;
 }
 
-.mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
-}
+    .mobile-nav-active .mobile-nav-toggle i {
+        color: #eb5d1e;
+    }
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -452,6 +451,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 --------------------------------------------------------------*/
 section {
   padding: 20px 0;
+  
+ 
 }
 
 .section-bg {
